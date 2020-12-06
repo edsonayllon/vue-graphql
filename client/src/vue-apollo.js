@@ -9,7 +9,7 @@ Vue.use(VueApollo)
 const AUTH_TOKEN = 'apollo-token'
 
 // Http endpoint
-const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'https://graphqlzero.almansi.me/api'
+const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2'
 // Files URL root
 export const filesRoot = process.env.VUE_APP_FILES_ROOT || httpEndpoint.substr(0, httpEndpoint.indexOf('/graphql'))
 

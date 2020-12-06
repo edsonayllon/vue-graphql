@@ -1,0 +1,11 @@
+query tokenDayDatas($first: Int!) {
+  tokenDayDatas( orderBy:totalLiquidityUSD, orderDirection: desc, first: $first) {
+    id,
+    token {
+      id,
+      symbol
+    },
+    totalLiquidityUSD,
+    priceUSD
+  }
+}
